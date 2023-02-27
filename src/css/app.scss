@@ -1,0 +1,23 @@
+// app global css in SCSS form
+@font-face {
+  font-family: moontime;
+  src: url(./fonts/moontime.woff);
+}
+@font-face {
+  font-family: phudu;
+  src: url(./fonts/Phudu-VariableFont_wght.ttf);
+}
+
+.bg-default {
+  background-color: #d5d7d2;
+}
+
+// declare a class which applies it
+.my-font {
+  font-family: "moontime";
+}
+
+.my-second-font {
+  font-family: "phudu";
+  letter-spacing: 0.2rem;
+}
