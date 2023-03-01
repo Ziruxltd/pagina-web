@@ -9,7 +9,8 @@
 }
 
 .bg-default {
-  background-color: #d5d7d2;
+  background-color: #f2efe2;
+  min-height: 100vh;
 }
 
 // declare a class which applies it
@@ -20,4 +21,8 @@
 .my-second-font {
   font-family: "phudu";
   letter-spacing: 0.2rem;
+}
+
+.my-text {
+  color: #56473c;
 }

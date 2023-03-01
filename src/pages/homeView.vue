@@ -1,8 +1,8 @@
 <template>
   <div class="content">
     <div>
-      <h2 class="text-center my-font">Save the date!</h2>
-      <p class="text-center text-justify my-second-font">
+      <h2 class="text-center my-font my-text">Save the date!</h2>
+      <p class="text-center text-justify my-second-font my-text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -38,7 +38,7 @@
         </q-card-section>
       </q-card>
     </div>
-    <div class="row my-card map-container">
+    <div class="row my-card">
       <q-card class="col-lg-6 col-sm-12 col-xs-12">
         <iframe
           class="map"
@@ -68,14 +68,14 @@
   width: 80%
   margin: auto
 
+div
+  color: #56473c
+
 .my-card
-  margin-bottom: 2em
+  margin-top: 2em
 
-
-.map-container
 .map
   width: 100%
-  margin: auto
   padding: 15px
   height: 30em
 
