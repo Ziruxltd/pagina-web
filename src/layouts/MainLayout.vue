@@ -11,12 +11,12 @@
 
       <q-tabs align="center" class="my-second-font text-secondary">
         <q-route-tab to="/home" label="Inicio" />
-        <q-route-tab to="/page2" label="Agenda de celebraciones" />
         <q-route-tab to="/page3" label="Alojamientos" />
-        <q-route-tab to="/page3" label="Turismo" />
+        <!-- <q-route-tab to="/page3" label="Turismo" /> -->
         <q-route-tab to="/food" label="Donde comer" />
         <q-route-tab to="/page3" label="R.S.V." />
-        <q-route-tab to="/page3" label="FAQ" />
+        <q-route-tab to="/lista" label="Lista de novios" />
+        <q-route-tab to="/FAQ" label="Preguntas frecuentes" />
       </q-tabs>
     </q-header>
 

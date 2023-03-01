@@ -1,0 +1,12 @@
+<template>
+  <div>
+    <h2>
+      <a
+        href="
+https://www.amazon.es/wedding/share/antonio_paulina
+"
+        >AMAZON
+      </a>
+    </h2>
+  </div>
+</template>

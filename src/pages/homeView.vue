@@ -85,6 +85,9 @@ img
   object-fit: cover
   object-position: 0 23%
 
+h2
+  margin: 30px
+
 p
   font-size: 1.2em
   letter-spacing: 0.1rem

@@ -1,20 +1,25 @@
 <template>
-  <div class="fullscreen bg-blue text-white text-center q-pa-md flex flex-center">
+  <div
+    class="fullscreen bg-default text-secondary text-center q-pa-md flex flex-center"
+  >
     <div>
-      <div style="font-size: 30vh">
-        404
-      </div>
+      <q-toolbar-title class="text-center my-font title">
+        <router-link style="text-decoration: none; color: inherit" to="/home">
+          <p>
+            <strong> Antonio y Paulina </strong>
+          </p>
+        </router-link>
+      </q-toolbar-title>
+      <div style="font-size: 30vh">404</div>
 
-      <div class="text-h2" style="opacity:.4">
-        Oops. Nothing here...
-      </div>
+      <div class="text-h4" style="opacity: 0.4">Oops. Nothing here...</div>
 
       <q-btn
         class="q-mt-xl"
-        color="white"
-        text-color="blue"
+        color="secondary"
+        text-color="primary"
         unelevated
-        to="/"
+        to="/home"
         label="Go Home"
         no-caps
       />
@@ -23,9 +28,14 @@
 </template>
 
 <script>
-import { defineComponent } from 'vue'
+import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: 'ErrorNotFound'
-})
+  name: "ErrorNotFound",
+});
 </script>
+
+<style scoped lang="sass">
+p
+  font-size: 50px
+</style>
