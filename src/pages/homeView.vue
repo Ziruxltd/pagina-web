@@ -64,9 +64,6 @@
 <script setup></script>
 
 <style lang="sass" scoped>
-.content
-  width: 80%
-  margin: auto
 
 div
   color: #56473c
