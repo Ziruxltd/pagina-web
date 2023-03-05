@@ -19,9 +19,7 @@
             <div class="text-subtitle2">Parque del retiro</div>
           </q-card-section>
 
-          <q-card-section class="q-pt-none">
-            {{ lorem }}
-          </q-card-section>
+          <q-card-section class="q-pt-none"> </q-card-section>
         </q-card>
       </div>
 
@@ -36,9 +34,7 @@
             <div class="text-subtitle2">Plaza de España</div>
           </q-card-section>
 
-          <q-card-section class="q-pt-none">
-            {{ lorem }}
-          </q-card-section>
+          <q-card-section class="q-pt-none"> </q-card-section>
         </q-card>
       </div>
       <div class="col-md-6 col-sm-12 col-xs-12 card-container">
@@ -52,20 +48,38 @@
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
           <q-card-section>
-            <div class="text-h6">Lugar del encuentro</div>
-            <div class="text-subtitle2">El Cigarral del Ángel</div>
+            <div class="row justify-between">
+              <div>
+                <div class="text-h6">Lugar del encuentro</div>
+                <div class="text-subtitle2">El Cigarral del Ángel</div>
+              </div>
+              <q-btn
+                @click="goTo('https://goo.gl/maps/eiJKEYCFWBQoaBDY8')"
+                color="secondary"
+                class="button"
+                icon="location_on"
+              />
+            </div>
           </q-card-section>
 
-          <q-card-section class="q-pt-none">
-            {{ lorem }}
-          </q-card-section>
+          <q-card-section class="q-pt-none"> </q-card-section>
         </q-card>
       </div>
     </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { useRouter } from "vue-router";
+const $router = useRouter();
+function goTo(url) {
+  if (url.includes("https://")) {
+    window.location.href = url;
+  } else {
+    $router.push(url);
+  }
+}
+</script>
 
 <style lang="sass" scoped>
 
