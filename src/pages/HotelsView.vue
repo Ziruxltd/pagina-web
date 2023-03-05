@@ -4,7 +4,7 @@
     <p class="text-center text-center my-second-font my-text">
       Estos son los hoteles que tienen acuerdo con el centro de eventos.
     </p>
-    <div class="row justify-between">
+    <div class="row justify-center">
       <div class="col-md-4 col-sm-12 col-xs-12 card-container">
         <q-card class="my-card">
           <img
@@ -120,14 +120,15 @@
 import { useRouter } from "vue-router";
 const $router = useRouter();
 function goTo(url) {
-  window.location.href = url;
+  if (url.includes("https://www.")) {
+    window.location.href = url;
+  } else {
+    $router.push(url);
+  }
 }
 </script>
 
 <style lang="sass" scoped>
-
-a
-  width: 100%
 p
   font-size: 1em
   letter-spacing: 0rem
