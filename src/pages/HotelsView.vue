@@ -6,13 +6,15 @@
     </p>
     <div class="row justify-center">
       <div class="col-md-4 col-sm-12 col-xs-12 card-container">
-        <q-card class="my-card">
+        <q-card
+          @click="
+            goTo(
+              'https://www.marriott.com/en-us/hotels/madft-eugenia-de-montijo-autograph-collection/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0'
+            )
+          "
+          class="my-card"
+        >
           <img
-            @click="
-              goTo(
-                'https://www.marriott.com/en-us/hotels/madft-eugenia-de-montijo-autograph-collection/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0'
-              )
-            "
             src="../assets/img/Eugenia_de_Montijo_Autograph_collection.png"
           />
 
@@ -35,15 +37,15 @@
         </q-card>
       </div>
       <div class="col-md-4 col-sm-12 col-xs-12 card-container">
-        <q-card class="my-card">
-          <img
-            @click="
-              goTo(
-                'https://www.eurostarshotels.com/eurostars-palacio-buenavista.html?referer_code=lb0gg00yx&utm_source=google&utm_medium=business&utm_campaign=lb0gg00yx'
-              )
-            "
-            src="../assets/img/Hotel_eurostars.png"
-          />
+        <q-card
+          @click="
+            goTo(
+              'https://www.eurostarshotels.com/eurostars-palacio-buenavista.html?referer_code=lb0gg00yx&utm_source=google&utm_medium=business&utm_campaign=lb0gg00yx'
+            )
+          "
+          class="my-card"
+        >
+          <img src="../assets/img/Hotel_eurostars.png" />
 
           <q-card-section>
             <div class="text-h6">Hotel Eugenia de Montijo</div>
@@ -64,11 +66,11 @@
         </q-card>
       </div>
       <div class="col-md-4 col-sm-12 col-xs-12 card-container">
-        <q-card class="my-card">
-          <img
-            @click="goTo('https://www.hotelbeatriztoledo.com/es/')"
-            src="../assets/img/Hotel_Beatriz_toledo.png"
-          />
+        <q-card
+          @click="goTo('https://www.hotelbeatriztoledo.com/es/')"
+          class="my-card"
+        >
+          <img src="../assets/img/Hotel_Beatriz_toledo.png" />
 
           <q-card-section>
             <div class="text-h6">Hotel Eugenia de Montijo</div>
@@ -135,6 +137,7 @@ p
 
 .my-card
   margin-top: 2em
+  cursor: pointer
 
 img
   padding: 15px

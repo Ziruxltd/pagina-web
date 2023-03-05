@@ -14,6 +14,20 @@
         </q-card>
       </div>
     </div>
+    <div class="row justify-center">
+      <div class="col-md-6 col-sm-12 col-xs-12 button-container">
+        <q-btn
+          @click="
+            goTo(
+              'https://docs.google.com/forms/d/e/1FAIpQLSd2XLCun28gCCBVwOVj_1Sb55SakOBrPOvzo_pty3ijXoCDIw/viewform?usp=sf_link'
+            )
+          "
+          color="secondary"
+          class="button"
+          label="¡Confirma tu asistencia!"
+        />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -42,8 +56,10 @@ p
 
 img
   cursor: pointer
-
-
+.button
+  width: 100%
+.button-container
+  padding: 1em 1em
 
 @media only screen and (max-width: $breakpoint-sm-max)
   .content

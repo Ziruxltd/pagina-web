@@ -3,13 +3,10 @@
     <div>
       <h2 class="text-center my-font my-text">Save the date!</h2>
       <p class="text-center text-justify my-second-font my-text">
-        Hemos creado esta pagina para ayudarles a planificar su estadía en
-        Toledo y Madrid. Nuestra intención es informarles sobre el evento y
-        recomnendarles nuestros lugares verdaderamente favoritos. Estamos muy
-        agradecidos de que puedan formar parte de esta celebración y
+        Estamos muy agradecidos que puedan formar parte de esta celebración y
         acompañarnos en este hermoso día. Esperamos de corazón que las
-        recomendaciones sean de gran ayuda y las disfruten tanto como nosotros
-        lo solemos hacer. ¡Nos vemos pronto!
+        recomendaciones de nuestros lugares favoritos les permitan disfrutar
+        tanto como nosotros lo solemos hacer. ¡Nos vemos pronto!
       </p>
     </div>
 

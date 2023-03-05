@@ -22,6 +22,10 @@ const routes = [
         path: "foodmadrid",
         component: () => import("src/pages/FoodMadrid.vue"),
       },
+      {
+        path: "agenda",
+        component: () => import("src/pages/AgendaView.vue"),
+      },
     ],
   },
 

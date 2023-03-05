@@ -2,8 +2,8 @@
   <div class="content">
     <div class="row justify-center">
       <div class="col-md-6 col-sm-12 col-xs-12 card-container">
-        <q-card class="my-card">
-          <img @click="goTo('foodmadrid')" src="../assets/img/madrid.jpg" />
+        <q-card @click="goTo('foodmadrid')" class="my-card">
+          <img src="../assets/img/madrid.jpg" />
 
           <q-card-section class="text-center">
             <div class="text-h6">Madrid</div>
@@ -12,8 +12,8 @@
         </q-card>
       </div>
       <div class="col-md-6 col-sm-12 col-xs-12 card-container">
-        <q-card class="my-card">
-          <img @click="goTo('')" src="../assets/img/toledo.jpg" />
+        <q-card @click="goTo('')" class="my-card">
+          <img src="../assets/img/toledo.jpg" />
 
           <q-card-section class="text-center">
             <div class="text-h6">Toledo</div>
@@ -22,8 +22,8 @@
         </q-card>
       </div>
       <div class="col-md-6 col-sm-12 col-xs-12 card-container">
-        <q-card class="my-card">
-          <img @click="goTo('')" src="../assets/img/segovia.jpg" />
+        <q-card @click="goTo('')" class="my-card">
+          <img src="../assets/img/segovia.jpg" />
 
           <q-card-section class="text-center">
             <div class="text-h6">Segovia</div>
@@ -56,6 +56,7 @@ p
 
 .my-card
   margin-top: 2em
+  cursor: pointer
 
 img
   max-height: 22em
