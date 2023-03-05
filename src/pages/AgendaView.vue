@@ -28,7 +28,17 @@
     </div>
   </div>
 </template>
-
+<script setup>
+import { useRouter } from "vue-router";
+const $router = useRouter();
+function goTo(url) {
+  if (url.includes("https://")) {
+    window.location.href = url;
+  } else {
+    $router.push(url);
+  }
+}
+</script>
 <style lang="sass" scoped>
 .agenda-container
   margin-top: 30px
