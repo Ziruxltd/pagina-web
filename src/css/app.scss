@@ -7,6 +7,10 @@
   font-family: phudu;
   src: url(./fonts/Phudu-VariableFont_wght.ttf);
 }
+@font-face {
+  font-family: faq;
+  src: url(./fonts/Manrope-VariableFont_wght.ttf);
+}
 
 .bg-default {
   background-color: #f2efe2;
@@ -19,8 +23,7 @@
 }
 
 .my-second-font {
-  font-family: "phudu";
-  letter-spacing: 0.2rem;
+  font-size: 1.2em;
 }
 
 .my-text {
@@ -33,5 +36,5 @@
 }
 
 .card-container {
-  padding: 0 1em;
+  padding: 2em 1em;
 }

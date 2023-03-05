@@ -3,7 +3,7 @@
     <div class="row justify-center">
       <div class="col-md-6 col-sm-12 col-xs-12 card-container">
         <q-card class="my-card">
-          <img @click="goTo('')" src="../assets/img/madrid.jpg" />
+          <img @click="goTo('foodmadrid')" src="../assets/img/madrid.jpg" />
 
           <q-card-section class="text-center">
             <div class="text-h6">Madrid</div>
@@ -21,6 +21,16 @@
           </q-card-section>
         </q-card>
       </div>
+      <div class="col-md-6 col-sm-12 col-xs-12 card-container">
+        <q-card class="my-card">
+          <img @click="goTo('')" src="../assets/img/segovia.jpg" />
+
+          <q-card-section class="text-center">
+            <div class="text-h6">Segovia</div>
+            <div class="text-subtitle2"></div>
+          </q-card-section>
+        </q-card>
+      </div>
     </div>
   </div>
 </template>
@@ -28,7 +38,7 @@
 import { useRouter } from "vue-router";
 const $router = useRouter();
 function goTo(url) {
-  if (url.includes("https://www.")) {
+  if (url.includes("https://")) {
     window.location.href = url;
   } else {
     $router.push(url);

@@ -3,18 +3,15 @@
     <div class="row justify-center">
       <div class="col-md-4 col-sm-12 col-xs-12 card-container">
         <q-card class="my-card">
-          <img
-            @click="goTo('')"
-            src="../assets/img/logo-bodamas-el-corte-inglés3.png"
-          />
+          <img @click="goTo('')" src="../assets/img/notnow.jpg" />
 
           <q-card-section class="text-center">
-            <div class="text-h6">Lista de novios El Corte Inglés</div>
+            <div class="text-h6">Lista de novios.</div>
             <div class="text-subtitle2"></div>
           </q-card-section>
         </q-card>
       </div>
-      <div class="col-md-4 col-sm-12 col-xs-12 card-container">
+      <!-- <div class="col-md-4 col-sm-12 col-xs-12 card-container">
         <q-card class="my-card">
           <img
             @click="goTo('https://www.amazon.es/wedding/share/antonio_paulina')"
@@ -26,7 +23,7 @@
             <div class="text-subtitle2"></div>
           </q-card-section>
         </q-card>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>

@@ -3,13 +3,13 @@
     <div>
       <h2 class="text-center my-font my-text">Save the date!</h2>
       <p class="text-center text-justify my-second-font my-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
+        Hemos creado esta pagina para ayudarles a planificar su estadía en
+        Toledo y Madrid. Nuestra intención es informarles sobre el evento y
+        recomnendarles nuestros lugares verdaderamente favoritos. Estamos muy
+        agradecidos de que puedan formar parte de esta celebración y
+        acompañarnos en este hermoso día. Esperamos de corazón que las
+        recomendaciones sean de gran ayuda y las disfruten tanto como nosotros
+        lo solemos hacer. ¡Nos vemos pronto!
       </p>
     </div>
 
@@ -84,17 +84,15 @@ div
   height: 30em
 
 img
-  max-height: 22em
   padding: 15px
-  object-fit: cover
-  object-position: 0 23%
+
 
 h2
   margin: 30px
 
 p
   font-size: 1.2em
-  letter-spacing: 0.1rem
+
 
 @media only screen and (max-width: $breakpoint-sm-max)
   .content

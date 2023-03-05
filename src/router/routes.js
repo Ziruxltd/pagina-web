@@ -4,12 +4,23 @@ const routes = [
     component: () => import("layouts/MainLayout.vue"),
     children: [
       { path: "home", component: () => import("src/pages/homeView.vue") },
-      { path: "food", component: () => import("src/pages/FoodMenu.vue") },
-      { path: "lista", component: () => import("src/pages/ListaNovios.vue") },
+      {
+        path: "food",
+        component: () => import("src/pages/FoodMenu.vue"),
+      },
+      {
+        path: "lista",
+        component: () => import("src/pages/ListaNovios.vue"),
+      },
       { path: "faq", component: () => import("src/pages/FAQ.vue") },
+      { path: "savedate", component: () => import("src/pages/SaveDate.vue") },
       {
         path: "alojamientos",
         component: () => import("src/pages/HotelsView.vue"),
+      },
+      {
+        path: "foodmadrid",
+        component: () => import("src/pages/FoodMadrid.vue"),
       },
     ],
   },

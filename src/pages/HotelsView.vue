@@ -137,11 +137,10 @@ p
   margin-top: 2em
 
 img
-  max-height: 22em
   padding: 15px
-  object-fit: cover
-  object-position: 0 23%
   cursor: pointer
+.my-second-font
+  font-size: 1.3em
 
 
 @media only screen and (max-width: $breakpoint-sm-max)
@@ -150,7 +149,6 @@ img
 
   .card-container
     padding: 0
-
   p
     font-size: .8em
     letter-spacing: 0.1rem
