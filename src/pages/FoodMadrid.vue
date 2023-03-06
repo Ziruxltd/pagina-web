@@ -1,7 +1,7 @@
 <template>
   <div class="content">
     <div class="row justify-center">
-      <div class="col-md-6 col-sm-12 col-xs-12 card-container">
+      <div class="col-md-4 col-sm-12 col-xs-12 card-container">
         <q-card class="my-card">
           <img
             @click="goTo('https://www.fratellifigurato.es/')"
@@ -17,7 +17,7 @@
           </q-card-section>
         </q-card>
       </div>
-      <div class="col-md-6 col-sm-12 col-xs-12 card-container">
+      <div class="col-md-4 col-sm-12 col-xs-12 card-container">
         <q-card class="my-card">
           <img
             @click="
@@ -44,7 +44,7 @@
           </q-card-section>
         </q-card>
       </div>
-      <div class="col-md-6 col-sm-12 col-xs-12 card-container">
+      <div class="col-md-4 col-sm-12 col-xs-12 card-container">
         <q-card class="my-card">
           <img
             @click="goTo('https://restaurantesvegetarianosartemisa.com/')"
@@ -60,6 +60,148 @@
           </q-card-section>
         </q-card>
       </div>
+      <div class="col-md-4 col-sm-12 col-xs-12 card-container">
+        <q-card class="my-card">
+          <img
+            @click="goTo('https://www.restauranteschaparritos.com/')"
+            src="../assets/img/elchaparrito.jpg"
+          />
+
+          <q-card-section class="text-center">
+            <div class="text-h6">El Chaparrito</div>
+            <div class="text-subtitle2">Auténtico restaurante mejicano.</div>
+            <q-card-section class="q-pt-none text-justify">
+              Perfecto para probar la gran variedad de tacos, ya que puedes
+              pedir los pequeños de solo 1€ cada uno.
+            </q-card-section>
+          </q-card-section>
+        </q-card>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12 card-container">
+        <q-card class="my-card">
+          <img
+            @click="goTo('https://restaurantetotoepeppino.com/home')"
+            src="../assets/img/totopepino.jpg"
+          />
+
+          <q-card-section class="text-center">
+            <div class="text-h6">Totó e Peppino</div>
+            <div class="text-subtitle2">Auténtica trattoria napoletana.</div>
+            <q-card-section class="q-pt-none text-justify">
+              Reconocida por el ministerio de cultura italiano como una
+              trattoria auténtica. Ha sido visitada por numeros fútbolistas,
+              entre los cuales se encuentra Maradona, Zamorano, Zidane...
+            </q-card-section>
+          </q-card-section>
+        </q-card>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12 card-container">
+        <q-card class="my-card">
+          <img
+            @click="goTo('https://goo.gl/maps/QL2HKrahqZ2unk2Q6')"
+            src="../assets/img/matilda.jpg"
+          />
+
+          <q-card-section class="text-center">
+            <div class="text-h6">Matilda café, barrio de las letras.</div>
+            <div class="text-subtitle2">Comida casera.</div>
+          </q-card-section>
+        </q-card>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12 card-container">
+        <q-card class="my-card">
+          <img
+            @click="goTo('https://goo.gl/maps/Mgj92VX1xNcgAt2J6')"
+            src="../assets/img/127tai.jpg"
+          />
+
+          <q-card-section class="text-center">
+            <div class="text-h6">127 Taipei Bar Ramen & Baos</div>
+            <div class="text-subtitle2">Auténtico ramen bar. ¡Picante!</div>
+          </q-card-section>
+        </q-card>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12 card-container">
+        <q-card class="my-card">
+          <img
+            @click="goTo('https://hotpot.es/')"
+            src="../assets/img/olla.jpg"
+          />
+
+          <q-card-section class="text-center">
+            <div class="text-h6">Hot Pot de Sichuan</div>
+            <div class="text-subtitle2">
+              Mejor Hot Pot de España. Cómida asiática.
+            </div>
+          </q-card-section>
+        </q-card>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12 card-container">
+        <q-card class="my-card">
+          <img
+            @click="goTo('https://hotpot.es/')"
+            src="../assets/img/demarialogo.png"
+          />
+
+          <q-card-section class="text-center">
+            <div class="text-h6">Restaurante De María</div>
+            <div class="text-subtitle2">
+              Lujosa parrilla argentina repartida por todo Madrid.
+            </div>
+            <q-card-section class="q-pt-none text-justify">
+              Aun que todos los locales son igual de buenos, solemos visitar el
+              que esta ubicado en la calle Félix Boix.
+            </q-card-section>
+          </q-card-section>
+        </q-card>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12 card-container">
+        <q-card class="my-card">
+          <img
+            @click="goTo('https://gruporubaiyat.com/index.asp?lview=es')"
+            src="../assets/img/rubaiyat.jpg"
+          />
+
+          <q-card-section class="text-center">
+            <div class="text-h6">Restaurante Rubaiyat</div>
+            <div class="text-subtitle2">Lujosa parrilla brasileña.</div>
+            <q-card-section class="q-pt-none text-justify">
+              Restaurante favorito de Antonio. €€€
+            </q-card-section>
+          </q-card-section>
+        </q-card>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12 card-container">
+        <q-card class="my-card">
+          <img
+            @click="goTo('https://botin.es/')"
+            src="../assets/img/botin.jpg"
+          />
+
+          <q-card-section class="text-center">
+            <div class="text-h6">Restaurante Botín</div>
+            <div class="text-subtitle2">Restaurante más antiguo del mundo.</div>
+            <q-card-section class="q-pt-none text-justify">
+              Solo venden platos de horno. Su especialidad, el cochinillo.
+            </q-card-section>
+          </q-card-section>
+        </q-card>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12 card-container">
+        <q-card class="my-card">
+          <img
+            @click="goTo('https://chocolateriasangines.com/')"
+            src="../assets/img/san-gines-2.jpg"
+          />
+
+          <q-card-section class="text-center">
+            <div class="text-h6">Chocolatería San Ginés</div>
+            <div class="text-subtitle2">
+              El mejor chocolate con churros del mundo, abierto 24h.
+            </div>
+          </q-card-section>
+        </q-card>
+      </div>
     </div>
   </div>
 </template>
@@ -67,7 +209,7 @@
 import { useRouter } from "vue-router";
 const $router = useRouter();
 function goTo(url) {
-  if (url.includes("https://")) {
+  if (url.includes("https://" || url.includes("http:"))) {
     window.location.href = url;
   } else {
     $router.push(url);

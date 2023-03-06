@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <h2 class="text-center my-font my-text">Alojamientos</h2>
+    <h2 class="text-center my-font my-text">Alojamientos en Toledo</h2>
     <p class="text-center text-center my-second-font my-text">
       Estos son los hoteles que tienen acuerdo con el centro de eventos.
     </p>
@@ -116,13 +116,58 @@
         </q-card>
       </div>
     </div>
+    <h2 class="text-center my-font my-text">Alojamientos en Madrid</h2>
+    <p class="text-center text-center my-second-font my-text">
+      Estos son los hoteles que tienen acuerdo con el centro de eventos.
+    </p>
+    <div class="row justify-center">
+      <div class="col-md-4 col-sm-12 col-xs-12 card-container">
+        <q-card class="my-card">
+          <img
+            @click="goTo('http://www.hostaltriana.com/')"
+            src="../assets/img/triana.jpg"
+          />
+
+          <q-card-section>
+            <div class="text-h6">Hostal Triana</div>
+            <div class="text-subtitle2">Hostal regentado por una amiga.</div>
+          </q-card-section>
+
+          <q-card-section class="q-pt-none text-justify">
+            <p>
+              Cómodo y cumple con todas las necesidades básicas. Ubicado en
+              pleno centro de Madrid.
+            </p>
+          </q-card-section>
+        </q-card>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12 card-container">
+        <q-card class="my-card">
+          <img
+            @click="
+              goTo(
+                'https://www.cataloniahotels.com/es/hotel/catalonia-las-cortes'
+              )
+            "
+            src="../assets/img/catalonia.jpg"
+          />
+
+          <q-card-section>
+            <div class="text-h6">Hotel Catalonia las Cortes</div>
+            <div class="text-subtitle2">
+              Hotel céntrico en el que se han alojado los Quevedo Alarcón
+            </div>
+          </q-card-section>
+        </q-card>
+      </div>
+    </div>
   </div>
 </template>
 <script setup>
 import { useRouter } from "vue-router";
 const $router = useRouter();
 function goTo(url) {
-  if (url.includes("https://www.")) {
+  if (url.includes("https://") || url.includes("http://")) {
     window.location.href = url;
   } else {
     $router.push(url);

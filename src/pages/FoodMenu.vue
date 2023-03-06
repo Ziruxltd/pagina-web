@@ -12,7 +12,7 @@
         </q-card>
       </div>
       <div class="col-md-6 col-sm-12 col-xs-12 card-container">
-        <q-card @click="goTo('')" class="my-card">
+        <q-card @click="goTo('lista')" class="my-card">
           <img src="../assets/img/toledo.jpg" />
 
           <q-card-section class="text-center">
@@ -22,7 +22,7 @@
         </q-card>
       </div>
       <div class="col-md-6 col-sm-12 col-xs-12 card-container">
-        <q-card @click="goTo('')" class="my-card">
+        <q-card @click="goTo('foodsegovia')" class="my-card">
           <img src="../assets/img/segovia.jpg" />
 
           <q-card-section class="text-center">
@@ -59,10 +59,8 @@ p
   cursor: pointer
 
 img
-  max-height: 22em
+  // max-height: 22em
   padding: 15px
-  object-fit: cover
-  object-position: 0 23%
   cursor: pointer
 
 

@@ -1,29 +1,26 @@
 <template>
   <div class="content">
     <div class="row justify-center">
-      <div class="col-md-4 col-sm-12 col-xs-12 card-container">
-        <q-card class="my-card">
-          <img @click="goTo('')" src="../assets/img/notnow.jpg" />
-
-          <q-card-section class="text-center">
-            <div class="text-h6">Nada por aquí. De momento...</div>
-            <div class="text-subtitle2"></div>
-          </q-card-section>
-        </q-card>
-      </div>
-      <!-- <div class="col-md-4 col-sm-12 col-xs-12 card-container">
+      <div class="col-md-6 col-sm-12 col-xs-12 card-container">
         <q-card class="my-card">
           <img
-            @click="goTo('https://www.amazon.es/wedding/share/antonio_paulina')"
-            src="../assets/img/amazon.png"
+            @click="goTo('https://mesondecandido.es/')"
+            src="../assets/img/mesoncandido.jpg"
           />
 
           <q-card-section class="text-center">
-            <div class="text-h6">Lista de novios Amazon</div>
-            <div class="text-subtitle2"></div>
+            <div class="text-h6">Mesón Cándido</div>
+            <div class="text-subtitle2">Asador segoviano.</div>
+            <q-card-section class="q-pt-none text-justify">
+              Este restaurante es una parada obligatoria para cualquiera que
+              visite Segovia. La especialidad es el cohinillo al horno el cual
+              cortan con un plato mientras recitan sus titulos otorgados por la
+              realeza. El restaurante lleva 150 años en activo y la casa es
+              probablemnte del siglo XVII.
+            </q-card-section>
           </q-card-section>
         </q-card>
-      </div> -->
+      </div>
     </div>
   </div>
 </template>
@@ -31,7 +28,7 @@
 import { useRouter } from "vue-router";
 const $router = useRouter();
 function goTo(url) {
-  if (url.includes("https://www.")) {
+  if (url.includes("https://")) {
     window.location.href = url;
   } else {
     $router.push(url);
@@ -51,8 +48,9 @@ p
   margin-top: 2em
 
 img
-  padding: 0px
+  padding: 15px
   cursor: pointer
+
 
 
 @media only screen and (max-width: $breakpoint-sm-max)
