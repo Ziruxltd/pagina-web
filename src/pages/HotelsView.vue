@@ -118,7 +118,7 @@
     </div>
     <h2 class="text-center my-font my-text">Alojamientos en Madrid</h2>
     <p class="text-center text-center my-second-font my-text">
-      Estos son los hoteles que tienen acuerdo con el centro de eventos.
+      Estos son los hoteles que recomendamos en Madrid.
     </p>
     <div class="row justify-center">
       <div class="col-md-4 col-sm-12 col-xs-12 card-container">
