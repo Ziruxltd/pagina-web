@@ -6,7 +6,8 @@
           <img src="../assets/img/madrid.jpg" />
 
           <q-card-section class="text-center">
-            <div class="text-h6">Madrid</div>
+            <div class="text-h6"></div>
+            <q-btn color="secondary" class="button" label="Comida Madrid" />
             <div class="text-subtitle2"></div>
           </q-card-section>
         </q-card>
@@ -16,7 +17,8 @@
           <img src="../assets/img/toledo.jpg" />
 
           <q-card-section class="text-center">
-            <div class="text-h6">Toledo</div>
+            <q-btn color="secondary" class="button" label="Comida Toledo" />
+            <div class="text-h6"></div>
             <div class="text-subtitle2"></div>
           </q-card-section>
         </q-card>
@@ -26,7 +28,8 @@
           <img src="../assets/img/segovia.jpg" />
 
           <q-card-section class="text-center">
-            <div class="text-h6">Segovia</div>
+            <q-btn color="secondary" class="button" label="Comida Segovia" />
+            <div class="text-h6"></div>
             <div class="text-subtitle2"></div>
           </q-card-section>
         </q-card>
@@ -47,7 +50,8 @@ function goTo(url) {
 </script>
 
 <style lang="sass" scoped>
-
+.button
+  width: 100%
 a
   width: 100%
 p
