@@ -15,7 +15,7 @@
         <q-route-tab to="/alojamientos" label="Alojamientos" />
         <!-- <q-route-tab to="/page3" label="Turismo" /> -->
         <q-route-tab to="/food" label="Donde comer" />
-        <q-route-tab to="/savedate" label="R.S.V." />
+        <q-route-tab to="/savedate" label="R.S.V.P." />
         <q-route-tab to="/lista" label="Lista de novios" />
         <q-route-tab to="/FAQ" label="Preguntas frecuentes" />
       </q-tabs>
