@@ -16,7 +16,7 @@
           <img src="../assets/img/photo_2023-02-27_21-37-31.jpg" />
           <q-card-section>
             <div class="text-h6">Invierno en Madrid</div>
-            <div class="text-subtitle2">Parque del retiro</div>
+            <div class="text-subtitle2">Parque de El Retiro</div>
           </q-card-section>
 
           <q-card-section class="q-pt-none"> </q-card-section>
