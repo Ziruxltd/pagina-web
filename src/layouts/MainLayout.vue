@@ -10,7 +10,7 @@
       </q-toolbar>
 
       <q-tabs align="center" class="my-second-font text-secondary">
-        <q-route-tab to="/home" label="Inicio" />
+        <q-route-tab to="/" label="Inicio" />
         <!-- <q-route-tab to="/Agenda" label="agenda" /> -->
         <q-route-tab to="/alojamientos" label="Alojamientos" />
         <!-- <q-route-tab to="/page3" label="Turismo" /> -->

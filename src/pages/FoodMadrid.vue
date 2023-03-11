@@ -1,204 +1,25 @@
 <template>
   <div class="content">
     <div class="row justify-center">
-      <div class="col-md-4 col-sm-12 col-xs-12 card-container">
+      <div
+        v-for="(res, index) in restaurants"
+        class="col-md-4 col-sm-12 col-xs-12 card-container"
+        :key="index"
+      >
         <q-card class="my-card">
-          <img
-            @click="goTo('https://www.fratellifigurato.es/')"
-            src="../assets/img/frateli.jpg"
-          />
+          <img @click="goTo(res.url)" :src="res.image" />
 
           <q-card-section class="text-center">
-            <div class="text-h6">Frateli Figurato</div>
-            <div class="text-subtitle2">
-              Auténtica pizza napoletana, la mejor de España y segunda mejor de
-              Europa.
-            </div>
-          </q-card-section>
-        </q-card>
-      </div>
-      <div class="col-md-4 col-sm-12 col-xs-12 card-container">
-        <q-card class="my-card">
-          <img
-            @click="
-              goTo('https://www.bigmammagroup.com/es/trattorias/bel-mondo')
-            "
-            src="../assets/img/belmondo.jpg"
-          />
-
-          <q-card-section class="text-center">
-            <div class="text-h6">Bel Mondo</div>
-            <div class="text-subtitle2">
-              Exéntrico restaurante italiano donde celebramos nuestro matrimonio
-              civíl.
-            </div>
+            <q-btn
+              color="secondary"
+              class="button"
+              :label="res.name"
+              @click="goTo(res.url)"
+            />
+            <div class="text-subtitle2">{{ res.description }}</div>
             <q-card-section class="q-pt-none text-justify">
-              Concebido como la mezcla perfecta entre un palacio de verano a
-              orillas del Lago de Garda y el piso de soltero de un chico guay de
-              los 80, Bel Mondo son 900m2 de pura felicidad. 300 asientos en
-              total, situados entre pequeños rincones, cerca de la chimenea para
-              una cena romántica o frente a la gran cocina abierta para mesas
-              más grandes. 235m2 de terraza en un jardín secreto lleno de
-              flores, un puro concentrado de romanticismo.
+              {{ res.explication }}
             </q-card-section>
-          </q-card-section>
-        </q-card>
-      </div>
-      <div class="col-md-4 col-sm-12 col-xs-12 card-container">
-        <q-card class="my-card">
-          <img
-            @click="goTo('https://restaurantesvegetarianosartemisa.com/')"
-            src="../assets/img/artemisa.png"
-          />
-
-          <q-card-section class="text-center">
-            <div class="text-h6">Restaurante artemisa</div>
-            <div class="text-subtitle2">
-              Completamente vegano, gluten free y sin contaminacón cruzada. Es
-              el sitio ideal para que los no veganos prueben esta dieta.
-            </div>
-          </q-card-section>
-        </q-card>
-      </div>
-      <div class="col-md-4 col-sm-12 col-xs-12 card-container">
-        <q-card class="my-card">
-          <img
-            @click="goTo('https://www.restauranteschaparritos.com/')"
-            src="../assets/img/elchaparrito.jpg"
-          />
-
-          <q-card-section class="text-center">
-            <div class="text-h6">El Chaparrito</div>
-            <div class="text-subtitle2">Auténtico restaurante mejicano.</div>
-            <q-card-section class="q-pt-none text-justify">
-              Perfecto para probar la gran variedad de tacos, ya que puedes
-              pedir los pequeños de solo 1€ cada uno.
-            </q-card-section>
-          </q-card-section>
-        </q-card>
-      </div>
-      <div class="col-md-4 col-sm-12 col-xs-12 card-container">
-        <q-card class="my-card">
-          <img
-            @click="goTo('https://restaurantetotoepeppino.com/home')"
-            src="../assets/img/totopepino.jpg"
-          />
-
-          <q-card-section class="text-center">
-            <div class="text-h6">Totó e Peppino</div>
-            <div class="text-subtitle2">Auténtica trattoria napoletana.</div>
-            <q-card-section class="q-pt-none text-justify">
-              Reconocida por el ministerio de cultura italiano como una
-              trattoria auténtica. Ha sido visitada por numeros fútbolistas,
-              entre los cuales se encuentra Maradona, Zamorano, Zidane...
-            </q-card-section>
-          </q-card-section>
-        </q-card>
-      </div>
-      <div class="col-md-4 col-sm-12 col-xs-12 card-container">
-        <q-card class="my-card">
-          <img
-            @click="goTo('https://goo.gl/maps/QL2HKrahqZ2unk2Q6')"
-            src="../assets/img/matilda.jpg"
-          />
-
-          <q-card-section class="text-center">
-            <div class="text-h6">Matilda café, barrio de las letras.</div>
-            <div class="text-subtitle2">Comida casera.</div>
-          </q-card-section>
-        </q-card>
-      </div>
-      <div class="col-md-4 col-sm-12 col-xs-12 card-container">
-        <q-card class="my-card">
-          <img
-            @click="goTo('https://goo.gl/maps/Mgj92VX1xNcgAt2J6')"
-            src="../assets/img/127tai.jpg"
-          />
-
-          <q-card-section class="text-center">
-            <div class="text-h6">127 Taipei Bar Ramen & Baos</div>
-            <div class="text-subtitle2">Auténtico ramen bar. ¡Picante!</div>
-          </q-card-section>
-        </q-card>
-      </div>
-      <div class="col-md-4 col-sm-12 col-xs-12 card-container">
-        <q-card class="my-card">
-          <img
-            @click="goTo('https://hotpot.es/')"
-            src="../assets/img/olla.jpg"
-          />
-
-          <q-card-section class="text-center">
-            <div class="text-h6">Hot Pot de Sichuan</div>
-            <div class="text-subtitle2">
-              Mejor Hot Pot de España. Cómida asiática.
-            </div>
-          </q-card-section>
-        </q-card>
-      </div>
-      <div class="col-md-4 col-sm-12 col-xs-12 card-container">
-        <q-card class="my-card">
-          <img
-            @click="goTo('https://hotpot.es/')"
-            src="../assets/img/demarialogo.png"
-          />
-
-          <q-card-section class="text-center">
-            <div class="text-h6">Restaurante De María</div>
-            <div class="text-subtitle2">
-              Lujosa parrilla argentina repartida por todo Madrid.
-            </div>
-            <q-card-section class="q-pt-none text-justify">
-              Aun que todos los locales son igual de buenos, solemos visitar el
-              que esta ubicado en la calle Félix Boix.
-            </q-card-section>
-          </q-card-section>
-        </q-card>
-      </div>
-      <div class="col-md-4 col-sm-12 col-xs-12 card-container">
-        <q-card class="my-card">
-          <img
-            @click="goTo('https://gruporubaiyat.com/index.asp?lview=es')"
-            src="../assets/img/rubaiyat.jpg"
-          />
-
-          <q-card-section class="text-center">
-            <div class="text-h6">Restaurante Rubaiyat</div>
-            <div class="text-subtitle2">Lujosa parrilla brasileña.</div>
-            <q-card-section class="q-pt-none text-justify">
-              Restaurante favorito de Antonio. €€€
-            </q-card-section>
-          </q-card-section>
-        </q-card>
-      </div>
-      <div class="col-md-4 col-sm-12 col-xs-12 card-container">
-        <q-card class="my-card">
-          <img
-            @click="goTo('https://botin.es/')"
-            src="../assets/img/botin.jpg"
-          />
-
-          <q-card-section class="text-center">
-            <div class="text-h6">Restaurante Botín</div>
-            <div class="text-subtitle2">Restaurante más antiguo del mundo.</div>
-            <q-card-section class="q-pt-none text-justify">
-              Solo venden platos de horno. Su especialidad, el cochinillo.
-            </q-card-section>
-          </q-card-section>
-        </q-card>
-      </div>
-      <div class="col-md-4 col-sm-12 col-xs-12 card-container">
-        <q-card class="my-card">
-          <img
-            @click="goTo('https://chocolateriasangines.com/')"
-            src="../assets/img/san-gines-2.jpg"
-          />
-
-          <q-card-section class="text-center">
-            <div class="text-h6">Chocolatería San Ginés</div>
-            <div class="text-subtitle2">
-              El mejor chocolate con churros del mundo, abierto 24h.
-            </div>
           </q-card-section>
         </q-card>
       </div>
@@ -207,6 +28,7 @@
 </template>
 <script setup>
 import { useRouter } from "vue-router";
+import { ref } from "vue";
 const $router = useRouter();
 function goTo(url) {
   if (url.includes("https://" || url.includes("http:"))) {
@@ -215,10 +37,108 @@ function goTo(url) {
     $router.push(url);
   }
 }
+
+const restaurants = ref([
+  {
+    name: "Frateli Figurato",
+    description: "Auténtica pizza napoletana",
+    explication:
+      "La mejor pizza napoletana de España, segunda mejor de Europa y décimasegunda del mundo.",
+    url: "https://www.fratellifigurato.es/",
+    image: require("../assets/img/frateli.jpg"),
+  },
+  {
+    name: "Bel Mondo",
+    description:
+      "Exéntrico restaurante italiano donde celebramos nuestro matrimonio civíl.",
+    explication:
+      "Concebido como la mezcla perfecta entre un palacio de verano a orillas del Lago de Garda y el piso de soltero de un chico guay de los 80, Bel Mondo son 900m2 de pura felicidad. 300 asientos en total, situados entre pequeños rincones, cerca de la chimenea para una cena romántica o frente a la gran cocina abierta para mesas más grandes. 235m2 de terraza en un jardín secreto lleno de flores, un puro concentrado de romanticismo.",
+    url: "https://www.bigmammagroup.com/es/trattorias/bel-mondo",
+    image: require("../assets/img/belmondo.jpg"),
+  },
+  {
+    name: "Restaurante Artemisa",
+    description:
+      "Vegano, vegetariano, gluten free y sin contaminación cruzada.",
+    explication:
+      "Restaurante ideal para que los no veganos prueben esta dieta.",
+    url: "https://restaurantesvegetarianosartemisa.com/",
+    image: require("../assets/img/artemisa.png"),
+  },
+  {
+    name: "El Chaparrito",
+    description: "Auténtico restaurante mexicano.",
+    explication:
+      "Perfecto para probar la gran variedad de tacos, ya que puedes pedir los pequeños de solo 1€ cada uno.",
+    url: "https://www.restauranteschaparritos.com/",
+    image: require("../assets/img/elchaparrito.jpg"),
+  },
+  {
+    name: "Tootó e Peppino",
+    description: "Auténtica trattoria napoletana.",
+    explication:
+      "Reconocida por el ministerio de cultura italiano como una trattoria auténtica. Ha sido visitada por numeros fútbolistas entre los cuales se encuentra Maradona, Zamorano, Zidane...",
+    url: "https://restaurantetotoepeppino.com/home",
+    image: require("../assets/img/totopepino.jpg"),
+  },
+  {
+    name: "Matilda café, barrio de las letras.",
+    description: "Comida casera.",
+    explication: "",
+    url: "https://goo.gl/maps/QL2HKrahqZ2unk2Q6",
+    image: require("../assets/img/matilda.jpg"),
+  },
+  {
+    name: "127 Taipei Bar Ramen & Baos",
+    description: "Auténtico ramen bar.",
+    explication: "",
+    url: "https://goo.gl/maps/Mgj92VX1xNcgAt2J6",
+    image: require("../assets/img/127tai.jpg"),
+  },
+  {
+    name: "Hot Pot de Sichuan",
+    description: "Mejor Hot Pot de España. Comida asiática.",
+    explication: "",
+    url: "https://hotpot.es/",
+    image: require("../assets/img/olla.jpg"),
+  },
+  {
+    name: "Restaurante De María",
+    description: "Lujosa parrilla argentina.",
+    explication:
+      "Tiene muchos locales. Solemos visitar el que está ubicado en la calle Félix Boix",
+    url: "https://www.demariarestaurante.es/",
+    image: require("../assets/img/demarialogo.png"),
+  },
+  {
+    name: "Restaurante Rubaiyat",
+    description: "Lujosa parrilla brasileña.",
+    explication: "Restaurante favorito de antonio. Precio: €€€",
+    url: "https://gruporubaiyat.com/restaurantes.asp?abt=48&lview=es",
+    image: require("../assets/img/rubaiyat.jpg"),
+  },
+  {
+    name: "Restaurante Botín",
+    description: "Restaurante mas antiguo del mundo.",
+    explication:
+      "Especializado en platos de horno. Especialidad, el cochinillo",
+    url: "https://botin.es/",
+    image: require("../assets/img/botin.jpg"),
+  },
+  {
+    name: "Chocolatería San Ginés",
+    description: "El mejor chocolate con churros del mundo, abierto 24h.",
+    explication: "",
+    url: "https://chocolateriasangines.com/",
+    image: require("../assets/img/san-gines-2.jpg"),
+  },
+]);
 </script>
 
 <style lang="sass" scoped>
-
+.button
+  width: 100%
+  margin-bottom: 10px
 a
   width: 100%
 p

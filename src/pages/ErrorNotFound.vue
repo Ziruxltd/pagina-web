@@ -4,7 +4,7 @@
   >
     <div>
       <q-toolbar-title class="text-center my-font title">
-        <router-link style="text-decoration: none; color: inherit" to="/home">
+        <router-link style="text-decoration: none; color: inherit" to="/">
           <p>
             <strong> Antonio y Paulina </strong>
           </p>
@@ -19,7 +19,7 @@
         color="secondary"
         text-color="primary"
         unelevated
-        to="/home"
+        to="/"
         label="Go Home"
         no-caps
       />
