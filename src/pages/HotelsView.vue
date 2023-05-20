@@ -7,6 +7,34 @@
     <div class="row justify-center">
       <div class="col-md-4 col-sm-12 col-xs-12 card-container">
         <q-card
+          @click="goTo('https://hotelposadasilleria.es/')"
+          class="my-card"
+        >
+          <img src="../assets/img/silleria.jpg" />
+
+          <q-card-section>
+            <q-btn
+              color="secondary"
+              class="button"
+              label="Hotel posada de la Sillería"
+              @click="goTo('https://hotelposadasilleria.es/')"
+            />
+            <div class="text-subtitle2">
+              Código de descuento: Antonio Y Paulina
+            </div>
+          </q-card-section>
+
+          <q-card-section class="q-pt-none text-justify">
+            <p>
+              Hotel en pleno centro de Toledo, a 5 minutos en taxi del centro de
+              eventos. Han sido super amables y nos han ofrecido un código
+              descuento para reservas en su pagina web
+            </p>
+          </q-card-section>
+        </q-card>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12 card-container">
+        <q-card
           @click="
             goTo(
               'https://www.marriott.com/en-us/hotels/madft-eugenia-de-montijo-autograph-collection/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0'
