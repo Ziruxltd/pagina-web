@@ -141,12 +141,24 @@ const segovia = ref([
   },
 ]);
 
+const nothing = ref([
+  {
+    name: "Nada por aqui, de momento...",
+    description: "Disponible más adelante",
+    explication: "",
+    url: "/",
+    image: require("../assets/img/notnow.jpg"),
+  },
+]);
+
 function setRestaurants() {
-  console.log($route.path);
+  restaurants.value = [];
   if ($route.path.includes("madrid")) {
     restaurants.value = madrid.value;
   } else if ($route.path.includes("segovia")) {
     restaurants.value = segovia.value;
+  } else {
+    restaurants.value = nothing.value;
   }
 }
 </script>

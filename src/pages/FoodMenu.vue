@@ -13,7 +13,7 @@
         </q-card>
       </div>
       <div class="col-md-6 col-sm-12 col-xs-12 card-container">
-        <q-card @click="goTo('lista')" class="my-card">
+        <q-card @click="goTo('foodtoledo')" class="my-card">
           <img src="../assets/img/toledo.jpg" />
 
           <q-card-section class="text-center">

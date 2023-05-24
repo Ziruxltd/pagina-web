@@ -7,7 +7,7 @@
     </p>
     <h4>¿Cuál es el código de vestimenta?</h4>
     <p>
-      La vestimenta recomendad es formal. Las mujeres pueden usar cualquier
+      La vestimenta recomendada es formal. Las mujeres pueden usar cualquier
       largo, a ser posible no negro. ¡Cualquier duda puedes consultarnos!
     </p>
     <h4>¿Qué clima hará en esa fecha?</h4>

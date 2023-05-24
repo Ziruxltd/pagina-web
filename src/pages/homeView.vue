@@ -2,6 +2,7 @@
   <div class="content">
     <div>
       <h2 class="text-center my-font my-text">Save the date!</h2>
+      <h2 class="text-center my-font my-text">17/09/2023</h2>
       <p class="text-center text-justify my-second-font my-text">
         Estamos muy agradecidos que puedan formar parte de esta celebración y
         acompañarnos en este hermoso día. Esperamos de corazón que las
