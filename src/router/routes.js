@@ -28,6 +28,10 @@ const routes = [
         component: () => import("src/pages/FoodMadrid.vue"),
       },
       {
+        path: "foodtoledo",
+        component: () => import("src/pages/FoodMadrid.vue"),
+      },
+      {
         path: "agenda",
         component: () => import("src/pages/AgendaView.vue"),
       },

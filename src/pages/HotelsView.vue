@@ -12,13 +12,12 @@
           <q-card-section>
             <q-btn
               href="https://hotelposadasilleria.es/"
-              target="_self"
               color="secondary"
               class="button"
               label="Hotel posada de la Sillería"
             />
             <div class="text-subtitle2">
-              Código de descuento: Antonio Y Paulina
+              Código de descuento: BODA ANTONIO Y PAULINA
             </div>
           </q-card-section>
 
@@ -26,7 +25,8 @@
             <p>
               Hotel en pleno centro de Toledo, a 5 minutos en taxi del centro de
               eventos. Han sido super amables y nos han ofrecido un código
-              descuento para reservas en su pagina web
+              descuento para reservas en su pagina web. 10% de descuento no
+              acumulable.
             </p>
           </q-card-section>
         </q-card>
@@ -155,13 +155,15 @@
     <div class="row justify-center">
       <div class="col-md-4 col-sm-12 col-xs-12 card-container">
         <q-card class="my-card">
-          <img
-            @click="goTo('http://www.hostaltriana.com/')"
-            src="../assets/img/triana.jpg"
-          />
+          <img src="../assets/img/triana.jpg" />
 
           <q-card-section>
-            <div class="text-h6">Hostal Triana</div>
+            <q-btn
+              href="http://www.hostaltriana.com/"
+              color="secondary"
+              class="button"
+              label="Hostal triana"
+            />
             <div class="text-subtitle2">Hostal regentado por una amiga.</div>
           </q-card-section>
 
@@ -175,17 +177,15 @@
       </div>
       <div class="col-md-4 col-sm-12 col-xs-12 card-container">
         <q-card class="my-card">
-          <img
-            @click="
-              goTo(
-                'https://www.cataloniahotels.com/es/hotel/catalonia-las-cortes'
-              )
-            "
-            src="../assets/img/catalonia.jpg"
-          />
+          <img src="../assets/img/catalonia.jpg" />
 
           <q-card-section>
-            <div class="text-h6">Hotel Catalonia las Cortes</div>
+            <q-btn
+              href="https://www.cataloniahotels.com/es/hotel/catalonia-las-cortes"
+              color="secondary"
+              class="button"
+              label="Hotel Catalonia las Cortes"
+            />
             <div class="text-subtitle2">
               Hotel céntrico en el que se han alojado los Quevedo Alarcón
             </div>
