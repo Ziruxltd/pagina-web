@@ -7,14 +7,14 @@
         :key="index"
       >
         <q-card class="my-card">
-          <img @click="goTo(res.url)" :src="res.image" />
+          <img :src="res.image" />
 
           <q-card-section class="text-center">
             <q-btn
               color="secondary"
               class="button"
               :label="res.name"
-              @click="goTo(res.url)"
+              :href="res.url"
             />
             <div class="text-subtitle2">{{ res.description }}</div>
             <q-card-section class="q-pt-none text-justify">
@@ -27,18 +27,14 @@
   </div>
 </template>
 <script setup>
-import { useRouter } from "vue-router";
-import { ref } from "vue";
-const $router = useRouter();
-function goTo(url) {
-  if (url.includes("https://" || url.includes("http:"))) {
-    window.location.href = url;
-  } else {
-    $router.push(url);
-  }
-}
-
-const restaurants = ref([
+import { useRoute } from "vue-router";
+import { ref, onMounted } from "vue";
+onMounted(() => {
+  setRestaurants();
+});
+const $route = useRoute();
+const restaurants = ref([]);
+const madrid = ref([
   {
     name: "Frateli Figurato",
     description: "Auténtica pizza napoletana",
@@ -133,6 +129,26 @@ const restaurants = ref([
     image: require("../assets/img/san-gines-2.jpg"),
   },
 ]);
+
+const segovia = ref([
+  {
+    name: "Mesón Cándido",
+    description: "Asador segoviano.",
+    explication:
+      "Este restaurante es una parada obligatoria para cualquiera que visite Segovia. La especialidad es el cohinillo al horno el cual cortan con un plato mientras recitan sus titulos otorgados por la realeza. El restaurante lleva 150 años en activo y la casa es probablemnte del siglo XVII.",
+    url: "https://mesondecandido.es/",
+    image: require("../assets/img/mesoncandido.jpg"),
+  },
+]);
+
+function setRestaurants() {
+  console.log($route.path);
+  if ($route.path.includes("madrid")) {
+    restaurants.value = madrid.value;
+  } else if ($route.path.includes("segovia")) {
+    restaurants.value = segovia.value;
+  }
+}
 </script>
 
 <style lang="sass" scoped>
@@ -150,7 +166,6 @@ p
 
 img
   padding: 15px
-  cursor: pointer
 
 
 

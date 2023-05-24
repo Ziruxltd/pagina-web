@@ -25,7 +25,7 @@ const routes = [
       },
       {
         path: "foodsegovia",
-        component: () => import("src/pages/FoodSegovia.vue"),
+        component: () => import("src/pages/FoodMadrid.vue"),
       },
       {
         path: "agenda",

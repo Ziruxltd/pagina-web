@@ -6,18 +6,16 @@
     </p>
     <div class="row justify-center">
       <div class="col-md-4 col-sm-12 col-xs-12 card-container">
-        <q-card
-          @click="goTo('https://hotelposadasilleria.es/')"
-          class="my-card"
-        >
+        <q-card replace="https://hotelposadasilleria.es/" class="my-card">
           <img src="../assets/img/silleria.jpg" />
 
           <q-card-section>
             <q-btn
+              href="https://hotelposadasilleria.es/"
+              target="_self"
               color="secondary"
               class="button"
               label="Hotel posada de la Sillería"
-              @click="goTo('https://hotelposadasilleria.es/')"
             />
             <div class="text-subtitle2">
               Código de descuento: Antonio Y Paulina
@@ -34,28 +32,17 @@
         </q-card>
       </div>
       <div class="col-md-4 col-sm-12 col-xs-12 card-container">
-        <q-card
-          @click="
-            goTo(
-              'https://www.marriott.com/en-us/hotels/madft-eugenia-de-montijo-autograph-collection/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0'
-            )
-          "
-          class="my-card"
-        >
+        <q-card class="my-card">
           <img
             src="../assets/img/Eugenia_de_Montijo_Autograph_collection.png"
           />
 
           <q-card-section>
             <q-btn
+              href="https://www.marriott.com/en-us/hotels/madft-eugenia-de-montijo-autograph-collection/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0"
               color="secondary"
               class="button"
               label="Hotel Eugenia de Montijo"
-              @click="
-                goTo(
-                  'https://www.marriott.com/en-us/hotels/madft-eugenia-de-montijo-autograph-collection/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0'
-                )
-              "
             />
             <div class="text-subtitle2">
               Condiciones especiales (segun tarifa web)
@@ -74,26 +61,18 @@
         </q-card>
       </div>
       <div class="col-md-4 col-sm-12 col-xs-12 card-container">
-        <q-card
-          @click="
-            goTo(
-              'https://www.eurostarshotels.com/eurostars-palacio-buenavista.html?referer_code=lb0gg00yx&utm_source=google&utm_medium=business&utm_campaign=lb0gg00yx'
-            )
-          "
-          class="my-card"
-        >
+        <q-card class="my-card">
           <img src="../assets/img/Hotel_eurostars.png" />
 
           <q-card-section>
             <q-btn
               color="secondary"
               class="button"
-              label="Hotel Palacio Buenavista"
-              @click="
-                goTo(
-                  'https://www.eurostarshotels.com/eurostars-palacio-buenavista.html?referer_code=lb0gg00yx&utm_source=google&utm_medium=business&utm_campaign=lb0gg00yx'
-                )
-              "
+              label="Hotel Palacio
+            Buenavista"
+              href="
+            https://www.eurostarshotels.com/eurostars-palacio-buenavista.html?referer_code=lb0gg00yx&utm_source=google&utm_medium=business&utm_campaign=lb0gg00yx
+            "
             />
             <div class="text-subtitle2">
               Condiciones especiales (segun tarifa web)
@@ -112,10 +91,7 @@
         </q-card>
       </div>
       <div class="col-md-4 col-sm-12 col-xs-12 card-container">
-        <q-card
-          @click="goTo('https://www.hotelbeatriztoledo.com/es/')"
-          class="my-card"
-        >
+        <q-card class="my-card">
           <img src="../assets/img/Hotel_Beatriz_toledo.png" />
 
           <q-card-section>
@@ -123,7 +99,7 @@
               color="secondary"
               class="button"
               label="Hotel Beatriz Toledo"
-              @click="goTo('https://www.hotelbeatriztoledo.com/es/')"
+              href="https://www.hotelbeatriztoledo.com/es/"
             />
             <div class="text-subtitle2">
               Condiciones especiales (segun tarifa web)
@@ -152,7 +128,7 @@
               color="secondary"
               class="button"
               label="Hotel La Bastida"
-              @click="goTo('https://www.hotellabastida.com/')"
+              href="https://www.hotellabastida.com/"
             />
             <div class="text-subtitle2">
               Condiciones especiales (segun tarifa web)
@@ -240,11 +216,9 @@ p
   margin-bottom: 10px
 .my-card
   margin-top: 2em
-  cursor: pointer
 
 img
   padding: 15px
-  cursor: pointer
 .my-second-font
   font-size: 1.3em
 
