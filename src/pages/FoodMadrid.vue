@@ -146,7 +146,7 @@ const nothing = ref([
     name: "Nada por aqui, de momento...",
     description: "Disponible más adelante",
     explication: "",
-    url: "",
+    url: "/",
     image: require("../assets/img/notnow.jpg"),
   },
 ]);

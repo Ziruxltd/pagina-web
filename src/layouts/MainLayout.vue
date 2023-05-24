@@ -37,8 +37,10 @@
 
 <script setup>
 import { ref, onMounted } from "vue";
-onMounted(() => {});
-const tab = ref();
+onMounted(() => {
+  console.log("montada");
+});
+const tab = ref("food");
 </script>
 <style lang="sass" scoped>
 .title
