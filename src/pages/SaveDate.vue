@@ -3,28 +3,19 @@
     <div class="row justify-center">
       <div class="col-md-6 col-sm-12 col-xs-12 card-container">
         <q-card class="my-card">
-          <img
-            @click="
-              goTo(
-                'https://docs.google.com/forms/d/e/1FAIpQLSd2XLCun28gCCBVwOVj_1Sb55SakOBrPOvzo_pty3ijXoCDIw/viewform?usp=sf_link'
-              )
-            "
-            src="../assets/img/rsvp.jpg"
-          />
+          <a href="https://forms.gle/WNRFc8UV9AAjQwUs7">
+            <img src="../assets/img/rsvp.jpg" />
+          </a>
         </q-card>
       </div>
     </div>
     <div class="row justify-center">
       <div class="col-md-6 col-sm-12 col-xs-12 button-container">
         <q-btn
-          @click="
-            goTo(
-              'https://docs.google.com/forms/d/e/1FAIpQLSd2XLCun28gCCBVwOVj_1Sb55SakOBrPOvzo_pty3ijXoCDIw/viewform?usp=sf_link'
-            )
-          "
           color="secondary"
           class="button"
           label="¡Confirma tu asistencia!"
+          href="https://forms.gle/WNRFc8UV9AAjQwUs7"
         />
       </div>
     </div>
