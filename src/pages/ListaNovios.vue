@@ -70,24 +70,6 @@
           </q-card-section>
         </q-card>
       </div>
-      <div class="col-md-4 col-sm-12 col-xs-12 card-container">
-        <q-card class="my-card q-pa-lg">
-          <img src="../assets/img/logo-bodamas-el-corte-inglés3.png" />
-
-          <q-card-section class="text-center">
-            <div class="text-subtitle2">Disponible más adelante...</div>
-            <q-btn
-              color="secondary"
-              class="button"
-              disabled
-              :label="'Lista de Novios El Corte Inglés'"
-              @click="
-                goTo('https://www.amazon.es/wedding/share/antonio_paulina')
-              "
-            />
-          </q-card-section>
-        </q-card>
-      </div>
     </div>
   </div>
 </template>
