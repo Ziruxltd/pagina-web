@@ -3,9 +3,10 @@
     <div class="row justify-center">
       <div class="col-md-6 col-sm-12 col-xs-12 card-container">
         <q-card class="my-card">
-          <a href="https://forms.gle/WNRFc8UV9AAjQwUs7">
-            <img src="../assets/img/rsvp.jpg" />
-          </a>
+          <img
+            @click="goTo('https://forms.gle/WNRFc8UV9AAjQwUs7')"
+            src="../assets/img/invite_AP.jpg"
+          />
         </q-card>
       </div>
     </div>
